@@ -1,0 +1,42 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow will install Deno then run `deno lint` and `deno test`.
+# For more information see: https://github.com/denoland/setup-deno
+
+name: 名称：Deno
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: 内容：已读
+
+jobs:
+  test:
+    runs-on: run-on:ubuntu-latest
+
+    steps:
+      - name: -名称：安装程序回购
+        uses: 用途：操作/签出@v4
+
+      - name: -名称：安装Deno
+#uses:denoland/setup-deno@v1# uses: denoland/setup-deno@v1
+        uses: 用途：denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31#v1.1.2# v1.1.2
+        with:
+          deno-version: deno-version:v1.x
+
+#取消注释此步骤以验证在每次提交时是否使用了“deno fmt”。# Uncomment this step to verify the use of 'deno fmt' on each commit.
+#-名称：验证格式# - name: Verify formatting
+#run:deno fmt-check#   run: deno fmt --check
+
+      - name: Run linter
+        run: deno lint
+
+      - name: Run tests
+        run: deno test -A
