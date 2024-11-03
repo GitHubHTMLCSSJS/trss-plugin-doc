@@ -436,9 +436,11 @@ export class example2 extends plugin {
 
 # 6.调用API
 你可以使用axios或者node-fetch库来使用网络请求调用API，可以查看我上面的随机问答插件，想要知道更多信息，可以查看上面两个库的官方文档
+
 [axios(github)](https://github.com/axios/axios)
 [axios(npm)](https://www.npmjs.com/package/axios)
 [axios中文文档](https://www.axios-http.cn/)
+
 这是上面问答插件调用API[https://api.tangdouz.com/a/dt.php?f=1](https://api.tangdouz.com/a/dt.php?f=1)的结果（示例）
 ```json
 {
