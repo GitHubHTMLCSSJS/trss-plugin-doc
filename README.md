@@ -432,7 +432,7 @@ export class example2 extends plugin {
 }
 ```
 如果心中有疑问，可以观察我写的一个问答插件示例
-[随机问答插件](https://raw.githubusercontent.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/随机问答插件.js)
+[随机问答插件](https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/随机问答插件.js)
 
 # 6.调用API
 你可以使用axios或者node-fetch库来使用网络请求调用API，可以查看我上面的随机问答插件，想要知道更多信息，可以查看上面两个库的官方文档
