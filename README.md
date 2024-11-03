@@ -15,7 +15,7 @@ pnpm i --filter ./plugins/micro-plugin
 ### 往云崽上传文件
 点击开发管理>文件，导航到所需目录，然后点击上传，上传所需文件即可。
 
-~以后你可以在小微插件中测试一些简单的代码，不必重复构造插件的类，同时小微插件也支持定时发送~
+*以后你可以在小微插件中测试一些简单的代码，不必重复构造插件的类，同时小微插件也支持定时发送*
 
 # 2.云崽插件的基本回复语法
 e变量是所有插件自动配置的全局变量，表示用户触发特定的关键词时的消息的对象
@@ -111,7 +111,7 @@ const msg = await common.makeForwardMsg(e, forward, '转发描述');
 await this.reply(msg);
 ```
 
-~一个示例e对象格式化后的内容~
+*<strong amend>一个示例e对象格式化后的内容</strong>*
 
 3308237120是发送消息的号,341506415是机器人号
 ```javascript
@@ -432,7 +432,7 @@ export class example2 extends plugin {
 }
 ```
 如果心中有疑问，可以观察我写的一个问答插件示例
-[随机问答插件]()
+[随机问答插件](https://raw.githubusercontent.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/随机问答插件.js)
 
 # 6.调用API
 你可以使用axios或者node-fetch库来使用网络请求调用API，可以查看我上面的随机问答插件，想要知道更多信息，可以查看上面两个库的官方文档
