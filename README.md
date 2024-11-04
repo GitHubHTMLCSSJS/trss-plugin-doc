@@ -4,7 +4,7 @@
 
 ### 安装项目(你也可以按照项目主页使用yarn安装)
 
-首先下载源码。,然后安装所需依赖。
+首先下载源码,然后安装所需依赖。
 
 ```bash
 git clone --depth=1 https://github.com/V2233/micro-plugin.git ./plugins/micro-plugin
@@ -449,4 +449,8 @@ export class example2 extends plugin {
     "answer": "B"
 }
 ```
-可以先看上面的随机问答插件再尝试不看示例代码复刻功能（\\r要转化为\n）
+
+## 练习
+1.先看上面的随机问答插件再尝试不看示例代码复刻功能（\\r要转化为\n）
+2.[练习指导]()
+
