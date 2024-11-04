@@ -452,5 +452,6 @@ export class example2 extends plugin {
 
 ## 练习
 1.先看上面的随机问答插件再尝试不看示例代码复刻功能（\\r要转化为\n）
-2.[练习指导]()
+2.尝试自己写一个问答插件
+[提示](https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/src/README.md)
 
