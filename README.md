@@ -10,7 +10,7 @@
 git clone --depth=1 https://github.com/V2233/micro-plugin.git ./plugins/micro-plugin
 pnpm i --filter ./plugins/micro-plugin
 ```
-然后打开云崽，在开机提示中找到回环地址打开![Screenshot_2024_1101_211446.png](1)
+然后打开云崽，在开机提示中找到回环地址打开![](https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/tree/main/回环地址.png)
 
 ### 往云崽上传文件
 点击开发管理>文件，导航到所需目录，然后点击上传，上传所需文件即可。
