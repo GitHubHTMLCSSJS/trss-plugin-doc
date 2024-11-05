@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const port = 8048;
 
-const q_a = 
+const q_a = [
     {
       question: "sin60° 等于多少？",
-      sele: ["A. √2/2", "B. "√3/2, "C. 1/2", "D. 3/4"],
+      sele: ["A. √2/2", "B. √3/2", "C. 1/2", "D. 3/4"],
       ans: "B"
     },
     {
@@ -25,7 +25,7 @@ const q_a =
     },
     {
       question: "下面哪些人物不出自《红楼梦》中的金陵十二钗正册？",
-      sele: ["A. 晴雯", "B. 贾环", "C. 袭人", "D. 薛幡"],
+      sele: ["A. 林黛玉", "B. 史湘云", "C. 妙玉", "D. 薛宝琴"],
       ans: "C"
     },
     {
@@ -46,7 +46,7 @@ const q_a =
     {
       question: "《西斯廷圣母》是哪位画家的作品？",
       sele: ["A. 米开朗基罗", "B. 达·芬奇", "C. 拉斐尔", "D. 梵高"],
-      ans: "B"
+      ans: "C"
     },
     {
       question: "哪种元素是地壳中含量最多的元素？",
@@ -78,11 +78,11 @@ const q_a =
       sele: ["A. 乔戈里峰", "B. 干城章嘉峰", "C. 珠穆朗玛峰", "D. 洛子峰"],
       ans: "C"
     }
-];
+  ];
 
 app.use(express.json());
-app.get("/",(req,res) => 
-  const i = Math.floor(Math.random() * 15) + 1
+app.get("/",(req,res) => {
+  const i = Math.floor(Math.random() * q_a.lentgh);
   res.json(q_a[i])
 });
 app.listen(port,() => {
