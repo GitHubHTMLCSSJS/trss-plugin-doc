@@ -14,7 +14,7 @@ node app.js
 终端出现的网址就是要请求的网址
 或者你可以直接运行脚本
 ```bash
-bash -c "$(curl -L https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/src/start.sh)"
+bash -c "$(curl -L https://mirrors.chenby.cn/https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/src/start.sh)"
 ```
 
 写完相应的代码后
