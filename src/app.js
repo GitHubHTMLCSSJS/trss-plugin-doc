@@ -26,7 +26,7 @@ const q_a = [
     {
       question: "下面哪些人物不出自《红楼梦》中的金陵十二钗正册？",
       sele: ["A. 林黛玉", "B. 史湘云", "C. 妙玉", "D. 薛宝琴"],
-      ans: "C"
+      ans: "D"
     },
     {
       question: "哪种动物是澳大利亚的国宝？",
@@ -82,7 +82,7 @@ const q_a = [
 
 app.use(express.json());
 app.get("/",(req,res) => {
-  const i = Math.floor(Math.random() * q_a.lentgh);
+  const i = Math.floor(Math.random() * q_a.length);
   res.json(q_a[i])
 });
 app.listen(port,() => {
