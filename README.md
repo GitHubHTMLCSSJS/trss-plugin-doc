@@ -431,8 +431,6 @@ export class example2 extends plugin {
     }
 }
 ```
-如果心中有疑问，可以观察我写的一个问答插件示例
-[随机问答插件](https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/随机问答插件.js)
 
 # 6.调用API
 你可以使用axios或者node-fetch库来使用网络请求调用API，可以查看我上面的随机问答插件，想要知道更多信息，可以查看上面两个库的官方文档
@@ -441,17 +439,10 @@ export class example2 extends plugin {
 [axios(npm)](https://www.npmjs.com/package/axios)
 [axios中文文档](https://www.axios-http.cn/)
 <br/>
-这是上面问答插件调用API[https://api.tangdouz.com/a/dt.php?f=1](https://api.tangdouz.com/a/dt.php?f=1)的结果（示例）
-```json
-{
-    "question": "《中华人民共和国国民经济和社会发展第十四个五年规划和2035年远景目标纲要》指出，要完善市场化多元化生态补偿，鼓励各类社会资本参与 。",
-    "sele": "\\rA:自然资源调查\\rB:生态保护修复",
-    "answer": "B"
-}
-```
 
 ## 练习
-1.先看上面的随机问答插件再尝试不看示例代码复刻功能（\\r要转化为\n）
-2.尝试自己写一个问答插件
+1.尝试自己写一个问答插件
 [提示](https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/src/README.md)
 
+如果心中还有疑问，可以观察我写的一个问答插件示例
+[随机问答插件](https://github.com/GitHubHTMLCSSJS/trss-plugin-doc/blob/main/随机问答插件.js)
